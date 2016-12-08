@@ -12,4 +12,39 @@ namespace Patterns
         {
         }
     }
+
+    public abstract class AbstractFactory
+    {
+        public abstract AbstractProductA CreateProductA();
+        public abstract AbstractProductB CreateProductB();
+    }
+
+    public abstract class AbstractProductB
+    {
+    }
+
+    public abstract class AbstractProductA
+    {
+    }
+
+    public class ConcreteFactory1 : AbstractFactory
+    {
+        public override AbstractProductA CreateProductA()
+        {
+            return new ProductA1();
+        }
+
+        public override AbstractProductB CreateProductB()
+        {
+            return new ProductB1();
+        }
+    }
+
+    public class ProductB1: AbstractProductB
+    {
+    }
+
+    public class ProductA1 : AbstractProductA
+    {
+    }
 }
