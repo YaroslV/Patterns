@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioural\Command.cs" />
+    <Compile Include="Behavioural\State.cs" />
+    <Compile Include="Behavioural\TemplateMethod.cs" />
     <Compile Include="Builder.cs" />
     <Compile Include="FactoryMethod.cs" />
     <Compile Include="Program.cs" />
@@ -51,6 +54,8 @@
     <Compile Include="Structural\Adapter.cs" />
     <Compile Include="Structural\Bridge.cs" />
     <Compile Include="Structural\Component.cs" />
+    <Compile Include="Structural\Decorator.cs" />
+    <Compile Include="Structural\Flyweight.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

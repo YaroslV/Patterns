@@ -11,7 +11,7 @@ namespace Patterns
     {
         static void Main(string[] args)
         {
-            TestComposite.Run();
+            TestDecorator.Run();
             Console.ReadKey();
         }
     }
